@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+ 
+<style>
+    body {
+        text-align: center;
+        background-image: url(tropical-10201_256.gif );
+        background-repeat: none ;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    nav { 
+        background-color: #e6e6e6;
+       padding: 10px;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    li {
+        float: left;
+    }
+    li a:hover {
+        background-color:none;
+    }
+    
+</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Intresting Information</h2>
+    <img src="c:\Users\Lenovo\Downloads\download (24).jpeg">
+    <br />
+    <button onclick="tiger();">Read More!</button>
+    <p id="tiger-info"></p>
+    <img src="c:\Users\Lenovo\Downloads\images (37).jpeg">
+    <br />
+    <button onclick="lion()">Read More</button>
+    <p id="lion-info"></p>
+    <script>
+        function tiger() {
+            document.getElementById("tiger-info").innerHTML = "The tiger (Panthera tigris) is the largest extant cat speices and a member of condingal.Among the largest species of cats in the world, tigers are powerful hunters with sharp teeth, strong jaws and agile bodies. They range across Asia from Russia all the way to Sumatra and mainland Southeast Asia. Scientists still have much to learn about these beautiful, endangered cats. "
+        }
+        function lion(){
+            document.getElementById("lion-info").innerHTML =
+            "the lion (panthera leo) is a species in the family and member of codingal.Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones."
+        }
+    </script>
+</body>
+</html>
